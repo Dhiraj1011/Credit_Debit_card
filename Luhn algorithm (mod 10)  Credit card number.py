@@ -11,6 +11,9 @@
 
 
 import numpy as np
+import matplotlib.pyplot as plt
+from mpl_toolkits.mplot3d import Axes3D
+import streamlit as st
 
 
 # In[2]:
@@ -21,15 +24,14 @@ no=[0]*16
 num=[]
 add=0
 dig=[]
-print(number,no,num)
+#print(number,no,num)
 
+st.title("Verify the Credit/Debit Card number")
+st.header("You can enter your credit/debit card number and then it will tell you whether it exists or not and which card it is")
 
 # In[3]:
-
-
-
 print("enter the card number")
-number=input()
+number=int(st.number_input('enter the card number'))
 
 
 for i in range(0,len(number)):
