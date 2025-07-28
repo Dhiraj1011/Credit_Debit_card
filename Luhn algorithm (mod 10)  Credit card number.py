@@ -31,7 +31,7 @@ st.header("You can enter your credit/debit card number and then it will tell you
 
 # In[3]:
 print("enter the card number")
-number=st.number_input('enter the card number',value=None, placeholder="Enter Card Number here",step=1)
+number=st.text_input('enter the card number',value=None, placeholder="Enter Card Number here",step=1)
 
 
 for i in range(0,len(number)):
